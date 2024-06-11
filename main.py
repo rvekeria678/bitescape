@@ -15,6 +15,8 @@ load_dotenv()
 #----Configure Flask App----#
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+ckeditor = CKEditor(app)
+Bootstrap5(app)
 #----Configure Flask-Login----#
 
 #----Create Database----#
