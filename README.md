@@ -23,7 +23,7 @@ Welcome to Bitscape! This project is a dynamic blog website where users can log 
 + Notifications: Web Push Notifications
 ## Installation
 ### Prerequisites
-+Python and Flask installed
++ Python and Flask installed
 
 ## Usage
 ### Creating an Account
