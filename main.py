@@ -34,7 +34,9 @@ class Base(DeclarativeBase): pass
 def root():
     return render_template('index.html')
 #----Log-in Page----#
-
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template('signin.html')
 #----Sign-out Action----#
 
 #----Comment Action----#

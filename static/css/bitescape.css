@@ -5,3 +5,8 @@ body {
     width: 100%;
 
 }
+.semi-transparent-bg {
+    background-color: rbga(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
