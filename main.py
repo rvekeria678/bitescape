@@ -50,7 +50,9 @@ def contact():
 def login():
     return render_template('signin.html')
 #----Sign-out Action----#
-
+@app.route('/logout', methods=['GET','POST'])
+def logout():
+    return redirect(url_for('root'))
 #----Comment Action----#
 
 #----Server Driver----#
