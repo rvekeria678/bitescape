@@ -1,5 +1,44 @@
 {% extends 'base.html' %}
 {% block body %}
 {% include 'header.html' %}
-{% include 'carousel.html' %}    
+{% include 'carousel.html' %}
+<div class="container p-5">
+    <div class="row text-light">
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/assets/jonathan-borba-uB7q7aipU2o-unsplash.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Create</h2>
+          <p>Our platform empowers users to become culinary creators by providing the tools and inspiration needed to craft new recipes. Whether you are a seasoned chef or just starting your culinary journey, our step-by-step guides, ingredient recommendations, and cooking tips make it easy to experiment in the kitchen. Share your unique dishes with our community, receive feedback, and watch your creations come to life. Join us in turning everyday ingredients into extraordinary meals!</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/assets/gidon-wessner-SZtLK_W7vKo-unsplash.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Share</h2>
+          <p>Our community thrives on the joy of sharing delicious creations. Once you've perfected your recipes, you can easily share them with our vibrant food-loving audience. Post your dishes, complete with photos and detailed instructions, and connect with fellow food enthusiasts. Receive comments, ratings, and tips from others, and inspire them with your culinary innovations. Let's spread the love for good food and great recipes together!</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="../static/assets/louis-hansel--9CjvlbUGhY-unsplash.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Enjoy</h2>
+          <p>Indulge in the diverse culinary delights created by our community. Explore a wide array of recipes, from comforting classics to innovative new dishes, all at your fingertips. Save your favorites, create personalized meal plans, and experience the joy of cooking and tasting amazing food. With our curated collections and user reviews, every meal becomes an adventure, ensuring that you enjoy every bite to the fullest. Bon appétit!</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+</div>
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-secondary">© 2024 Bitescape, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </footer>
+  </div>
 {% endblock %}
