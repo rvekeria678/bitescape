@@ -20,5 +20,9 @@ body {
 }
 #about-content {
     margin-top: 5em;
-    width: 45em
+    width: 45em;
+}
+#contact-content {
+    margin-top: 5em;
+    width: 45em;
 }
