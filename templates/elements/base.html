@@ -10,8 +10,9 @@
     {% endblock %}
 </head>
 <body>
+    {% include 'header.html' %}
     {% block body %}{% endblock %}
-    
+    {% include 'footer.html' %}
     {% block scripts %}
     {{ bootstrap.load_js() }}
     {% endblock %}
