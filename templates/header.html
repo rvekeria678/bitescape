@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
-    <img src="../static/assets/skillet_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="mx-2">
-    <a class="navbar-brand" href="{{ url_for('root') }}">Bitescape</a>
+    <a class="navbar-brand" href="{{ url_for('root') }}"><img src="../static/assets/skillet_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="mx-2">Bitescape</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,13 +8,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('root') }}">Cuisines</a>
+          <a class="nav-link" href='{{ url_for("cuisines") }}'>Cuisines</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('root') }}">Contact</a>
+          <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('root') }}">About</a>
+          <a class="nav-link" href="{{ url_for('about') }}">About</a>
         </li>
       </ul>
       <form class="d-flex" action='{{ url_for("login") }}' method="post">

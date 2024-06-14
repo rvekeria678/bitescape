@@ -33,13 +33,17 @@ class Base(DeclarativeBase): pass
 @app.route('/', methods=['GET'])
 def root():
     return render_template('index.html')
+#----Cuisines Page----#
+@app.route('/cuisines', methods=['GET', 'POST'])
+def cuisines():
+    return render_template('cuisines.html')
 #----About Page----#
-app.route('/about')
+@app.route('/about', methods=['GET', 'POST'])
 def about():
     return render_template('about.html')
 #----Contact Page----#
-app.route('/contact', methods=['GET', 'POST'])
-def get_contact_info():
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
     return render_template('contact.html')
 #----Log-in Page----#
 @app.route('/login', methods=['GET', 'POST'])
