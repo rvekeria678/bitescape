@@ -18,7 +18,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 #----Configure Flask-Login----#
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 #----Create Database----#
 class Base(DeclarativeBase): pass
 #----Configure Tables----#
