@@ -1,4 +1,4 @@
-from flask import Flask, abort, render_template, redirect, url_for, flash
+from flask import Flask, abort, render_template, redirect, request, url_for, flash, send_from_directory
 from flask_bootstrap import Bootstrap5
 from flask_ckeditor import CKEditor
 from flask_login import UserMixin, login_user, LoginManager, current_user, logout_user
@@ -48,7 +48,15 @@ def contact():
 #----Log-in Page----#
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    if request.method == 'post':
+        #----Handle Log In Attempt-----#
+        print("Login Attempt")
+        redirect(url_for('root'))
     return render_template('signin.html')
+#----Register Page----#
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    return render_template('register.html')
 #----Sign-out Action----#
 @app.route('/logout', methods=['GET','POST'])
 def logout():

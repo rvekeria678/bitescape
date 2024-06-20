@@ -5,14 +5,21 @@
     <form action="{{ url_for('login') }}" method="post">
       <div class="text-center">
         <img class="mb-4 text-center" src="../static/assets/skillet_24dp_FILL0_wght400_GRAD0_opsz24.svg" width="72" height="57">
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <h1 class="h3 mb-3 fw-normal">Sign up</h1>
       </div>
+      <label for="floatingInput" class="my-1">Name</label>
+      <input type="name" class="form-control" id="floatingName" placeholder="Name">
+
       <label for="floatingInput" class="my-1">Email address</label>
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      
       <label for="floatingPassword" class="my-1">Password</label>
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+
+      <label for="floatingPassword" class="my-1">Confirm Password</label>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
       <br>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
     </form>
     <br>
     <h6 class="text-center">Don't have an account? <a class="text-white" href="{{ url_for('root') }}">Signup</a></h6>
