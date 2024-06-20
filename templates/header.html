@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ url_for('root') }}"><img src="../static/assets/skillet_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="mx-2">Bitescape</a>
+    <a class="navbar-brand" href="{{ url_for('root') }}"><img
+        src="../static/assets/skillet_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="mx-2">Bitescape</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -18,7 +19,7 @@
         </li>
       </ul>
       <form class="d-flex" action='{{ url_for("login") }}' method="post">
-        <button class="btn btn-light px-4" type="submit">Log in | Register</button>
+        <button id="login-btn" class="btn btn-light px-4" type="submit">Log in<img id="login-icon" src="../static/assets/login_24dp_FILL0_wght400_GRAD0_opsz24.svg"></button>
       </form>
     </div>
   </div>
