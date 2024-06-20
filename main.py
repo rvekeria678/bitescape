@@ -18,25 +18,14 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 #----Configure Flask-Login----#
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+
 #----Create Database----#
 class Base(DeclarativeBase): pass
 #----Configure Tables----#
 #----Configure BlogPost Table----#
-class BlogPost(db.Model):
-    id: Mapped[int] = mapped_column(Integer, primary_key=True)
-    title: Mapped[str] = mapped_column(String(250), unique=True, nullable=False)
-    subtitle: Mapped[str] = mapped_column(String(250), nullable=False)
-    date: Mapped[str] = mapped_column(String(250), nullable=False)
-    body: Mapped[str] = mapped_column(Text, nullable=False)
-    author = Mapped[str] = mapped_column(String(250), nullable=False)
-    img_url: Mapped[str] = mapped_column(String(250), nullable=False)
+
 #----Configure User Table----#
-class User(UserMixin, db.Model):
-    id: Mapped[int] = mapped_column(Integer, primary_key=True)
-    name: Mapped[str] = mapped_column(String[100], nullable=False)
-    email: Mapped[str] = mapped_column(String[100], nullable=False)
-    password: Mapped[str] = mapped_column(String[100], nullable=False)
+
 #----Create Tables in Database----#
 
 #----Routing Logic----#
